@@ -1,0 +1,22 @@
+
+1.Transpost of Matrix
+    step 1 : Interchanging (i,j) -> (j,i) for each element.
+    Time : O(n^2)
+
+2. Matrix rotate
+  
+    step 1 : Transpose the given matrix 
+    step 2 : Reverse each column depends on clock wise or anti clockwise rotation.
+    Time : O(n^2)
+  
+3. Search element from sorted row-column matrix
+    Naive:
+        using two for loops and iterating each element from (0,0) to (R-1,C-1)
+        Time : O(R*C)
+
+    Efficient solution:
+        step 1 : Start from top right of the matrix
+        step 2 : Decrement column if element < current element
+        step 3 : Increment row if element > current element
+        step 4 : repeat untill end
+        Time : O(R+C)
