@@ -9,7 +9,7 @@ GeeksForGeeks DSA solutions  :v:
 <br/>
 [4.Heap](https://github.com/kannatj/GeeksForGeeks_DSA_Solution/tree/master/GeeksForGeeks/src/Heap)
 <br/>
-[5.Mathematics](https://github.com/kannatj/GeeksForGeeks_DSA_Solution/tree/master/GeeksForGeeks/src/Mathematics)
+[5.Mathematics](https://github.com/kannatj/GeeksForGeeks_DSA_Solution/tree/master/GeeksForGeeks/src/Mathametics)
 <br/>
 [6.Recursion](https://github.com/kannatj/GeeksForGeeks_DSA_Solution/tree/master/GeeksForGeeks/src/Recursion)
 <br/>
