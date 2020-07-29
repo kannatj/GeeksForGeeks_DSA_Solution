@@ -12,6 +12,9 @@ public class QuickSort {
 		for(int a: arr)
 		System.out.print(a+" ");
 		
+		
+	  System.out.println("Quick sort");
+		
 
 	}
 
