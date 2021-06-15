@@ -1,0 +1,47 @@
+package Recursion;
+
+public class SumOfsubsets {
+	/*
+	 * This will take O(n^2) time
+	 */
+
+
+  //Brute force method
+	int sumofsubBrut(int a[], int sum) {
+		int count = 0;
+		int len = a.length;
+		if (sum == 0)
+			return 1;
+
+		for (int i = 0; i < len - 1; i++) {
+			for (int j = i + 1; j < len; j++) {
+				if (a[i] + a[j] == sum) {
+					count++;
+				}
+			}
+		}
+
+		return count;
+	}
+  
+  
+  //Using recursion
+  
+  //Subracting each element in the array to sum and finding
+  
+	int subsets(int a[], int n, int sum) {
+		if (n == 0)
+			return (sum == 0) ? 1 : 0;
+		return (subsets(a, n - 1, sum) + subsets(a, n - 1, sum - a[n - 1]));
+	}
+
+	public static void main(String[] args) {
+		SumOfsubsets s1 = new SumOfsubsets();
+		int a[] = { 10,20,15 };
+		int sum = 25;
+		//int result = s1.sumofsubBrut(a, sum);
+		int n = a.length;
+		int result = s1.subsets(a, n, sum);
+		System.out.println(result);
+	}
+}
